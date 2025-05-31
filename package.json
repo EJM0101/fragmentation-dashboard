@@ -1,18 +1,24 @@
 {
   "name": "fragmentation-dashboard",
   "version": "1.0.0",
-  "description": "Plateforme pédagogique interactive pour la fragmentation des données avec routage Edge.",
+  "description": "Dashboard pédagogique sur la fragmentation horizontale, verticale et mixte des données dans les entrepôts de données.",
+  "author": "Emman Mlmb",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "^14.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "formidable": "^2.1.1",
-    "papaparse": "^5.4.1"
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "papaparse": "^5.4.1",
+    "formidable": "^3.5.2"
   },
-  "license": "MIT"
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.3"
+  }
 }
