@@ -1,31 +1,32 @@
-
 # 📦 Fragmentation Dashboard
 
-Cette plateforme Next.js simule la fragmentation logique des données avec téléversement CSV.
+## 🧠 Objectif
+Cette application pédagogique illustre la **fragmentation des données** dans les bases relationnelles. Vous pouvez téléverser un fichier `.csv` et observer trois types de fragments générés :
 
-## 🎓 Concepts Pédagogiques
+- 🔹 **Horizontale** : découpage ligne par ligne.
+- 🔸 **Verticale** : découpage colonne par colonne.
+- 🧷 **Mixte** : blocs croisés de lignes et colonnes.
 
-- **Horizontale** : découpe par ligne (ex. pays, région...)
-- **Verticale** : découpe par colonne (ex. infos privées vs publiques)
-- **Mixte** : combinaison des deux
+## 🎯 Cas d'utilisation
+La fragmentation permet :
+- D'améliorer la performance et la scalabilité.
+- De répartir les données entre plusieurs serveurs.
+- D’adapter les requêtes à des régions géographiques.
 
-## 🧩 Fonctionnement
+## 💻 Fonctionnement
+1. L'utilisateur téléverse un fichier `.csv`.
+2. L'API analyse les colonnes et les lignes.
+3. Trois types de fragments sont générés en mémoire.
+4. Le frontend les affiche en tableaux interactifs.
 
-- Téléverser vos fichiers CSV (tables)
-- Le système fragmente automatiquement les données
-- Chaque fragment est stocké dans `/public/fragments`
-- Routage simulé basé sur des règles (localisation, champ...)
+## 🛠️ Technologies
+- **Next.js**
+- **React**
+- **Tailwind CSS**
+- **Formidable** pour upload.
+- **PapaParse** pour parsing CSV.
 
-## ✨ Objectif
-
-Former les étudiants, architectes et data engineers sur les mécanismes réels de **fragmentation** utilisés en entrepôts de données distribués.
-
-## 🚀 Stack technique
-
-- Next.js 14
-- React 18
-- TailwindCSS
-- Papaparse
-- Formidable
-
-## 💡 Inspiré par les systèmes distribués OLAP & DW modernes.
+## 🚀 Lancer le projet
+```bash
+npm install
+npm run dev
